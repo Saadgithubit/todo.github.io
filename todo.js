@@ -2,7 +2,7 @@ function add(){
     var inputElement = document.getElementById('input')
     var ulElement = document.getElementById('ul')
     var liElement = document.createElement('li')
-    liElement.id = 'total-list'
+    
 
     ulElement.append(liElement)
 
@@ -10,7 +10,7 @@ function add(){
     var delbtn = '<button onclick="del(event)" class="delete-btn">Delete</button>'
     
     var editbtn = '<button onclick="edit(event)" class="edit-btn">Edit</button>'
-    liElement.innerHTML = '<span id="list">' + inputElement.value + '</span>' + editbtn + delbtn 
+    liElement.innerHTML = '<span>' + inputElement.value + '</span>' + editbtn + delbtn 
 
 
     inputElement.value = ''

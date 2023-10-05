@@ -12,7 +12,6 @@ body , html{
 
 .h1-div{
     text-align: center;
-    margin: auto;
     margin-top: 30px;
     color: white;
 }
@@ -23,7 +22,7 @@ body , html{
 .top{
     width: 800px;
     height: 150px;
-    border: 1px solid black;
+    border: none;
     background-color: white;
     margin: auto ;
     display: flex;
@@ -66,7 +65,7 @@ body , html{
 .task-div{
     width: 800px;
     height: 100%;
-    border: 1px solid black;
+    border: none;
     background-color: white;
     margin: auto;
     text-align: center;
@@ -103,3 +102,84 @@ button{
 }
 
 /* ...............................Media Queries........................................... */
+
+@media screen and (max-width: 768px) and (min-width: 500px){
+
+    body , html {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .h1-div > h1{
+        font-size: 40px;
+    }
+    .top{
+        width: 90%;
+        height: 200px;
+    }
+
+    .inner{
+        width: 80%;
+        height: 150px;
+        
+    }
+
+    #input{
+        width: 90%;
+        margin: 10px;
+    }
+
+    .add , .del-all{
+        width: 30%;
+        margin-left: 70px;
+    }
+    .task-div{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    body , html {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .h1-div > h1{
+        font-size: 40px;
+    }
+    .top{
+        width: 90%;
+        height: 200px;
+    }
+
+    .inner{
+        width: 80%;
+        height: 150px;
+        
+    }
+
+    #input{
+        width: 90%;
+        margin: 20px;
+    }
+
+    .add , .del-all{
+        width: 30%;
+        margin-left: 40px;
+    }
+    .task-div{
+        width: 90%;
+    }
+
+    .delete-btn , .edit-btn{
+        margin-left: 30px;
+        width: 90px;
+        height: 50px;
+    }
+
+    li{
+        padding: 0%;
+        padding-left: 0%;
+    }
+    
+}
