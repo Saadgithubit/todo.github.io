@@ -21,9 +21,11 @@ function del(e){
    
 }
 
+var editElement;
+
 function edit(a){
     var inputElement = document.getElementById('input')
-    var editElement = a.target.previousSibling
+     editElement = a.target.previousSibling
 
     inputElement.value = editElement.innerHTML 
 
@@ -37,8 +39,8 @@ function edit(a){
 
 function update(){
     var inputElement = document.getElementById('input')
-    var list = document.getElementById('list')
-    list.innerHTML = inputElement.value
+    
+    editElement.innerHTML = inputElement.value
     inputElement.value = '' 
    
     var updatebtn = document.getElementById('update')
